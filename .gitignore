@@ -1,0 +1,17 @@
+node_modules
+dist
+data
+logs
+uploads
+.env
+.env.*
+!.env.example
+.env.local
+.codebase-memory
+graphify-out
+test-artifacts
+*.tsbuildinfo
+playwright-report
+test-results
+coverage
+*.log

@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;700&family=Lato:wght@400;700;900&display=swap');
+
+:root {
+  --color-primary: #1e3a8a;
+  --color-secondary: #1e40af;
+  --color-accent: #b45309;
+  --color-background: #f8fafc;
+  --color-foreground: #0f172a;
+  --color-muted: #e9eef5;
+  --color-border: #cbd5e1;
+  --color-panel: #ffffff;
+  --color-panel-soft: #f1f5f9;
+  --color-danger: #dc2626;
+  --color-success: #047857;
+  --color-warning: #9a3412;
+  --shadow-panel: 0 14px 36px rgba(15, 23, 42, 0.08);
+  font-family: Lato, Arial, sans-serif;
+  color: var(--color-foreground);
+  background: var(--color-background);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button,
+.file-button {
+  align-items: center;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: #ffffff;
+  color: var(--color-foreground);
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 0.86rem;
+  font-weight: 900;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 14px;
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease;
+}
+
+button:hover:not(:disabled),
+.file-button:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+.file-button:focus-within {
+  outline: 3px solid rgba(30, 58, 138, 0.24);
+  outline-offset: 2px;
+}
+
+button:disabled,
+.file-button:has(input:disabled) {
+  cursor: not-allowed;
+  opacity: 0.48;
+}
+
+input,
+textarea {
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  color: var(--color-foreground);
+  padding: 10px 12px;
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'EB Garamond', Georgia, serif;
+  letter-spacing: 0;
+}
